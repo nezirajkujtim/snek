@@ -202,24 +202,25 @@ h1 {
   }
 }
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    0%   {background-color:Olive; left:0px; top:0px;}
-    25%  {background-color:green; left:0px; top:25px;}
+@-webkit-keyframes top {
+      0%   {left:0px; bottom:0px;}
+    25%  {eft:0px; bottom:25px;}
 
 }
 
 /* Standard syntax */
-@keyframes example {
-    0%   {background-color:Olive; left:0px; top:0px;}
-    25%  {background-color:green; left:0px; top:25px;}
+@keyframes top {
+    0%   {left:0px; bottom:0px;}
+    25%  {eft:0px; bottom:25px;}
 
 }
-p.move{
-    position: relative;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+#scores{
+     position: relative;
+    -webkit-animation-name: top; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
+    animation-name: top;
     animation-duration: 4s;
     animation-delay: 2s;
+
 }
