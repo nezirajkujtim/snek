@@ -109,7 +109,7 @@ h1 {
 
 #btn-restart {
     padding: 10px 20px;
-    margin-top: 10px; 
+    margin-top: 10px;
     border: none;
     background: #057356;
     color: #FFF;
@@ -168,8 +168,8 @@ h1 {
   font-weight: bold;
   color: red;
 }
-  
-@media screen and (min-width: 425px){ 
+
+@media screen and (min-width: 425px){
 
   .rank {
     display: grid;
@@ -179,7 +179,7 @@ h1 {
   .rank .subtitle {
     grid-column: 2;
   }
-  
+
   .rank #scores {
     grid-column: 2;
   }
@@ -201,4 +201,25 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color:Olive; left:0px; top:0px;}
+    25%  {background-color:green; left:0px; top:25px;}
 
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:Olive; left:0px; top:0px;}
+    25%  {background-color:green; left:0px; top:25px;}
+
+}
+p.move{
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
